@@ -14,7 +14,6 @@
 		AF059A5423E0DB6C006AA17A /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF059A5323E0DB6C006AA17A /* WordsTableViewController.swift */; };
 		AF059A5623E0DB8D006AA17A /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF059A5523E0DB8D006AA17A /* DefinitionViewController.swift */; };
 		AF4FF50623E1437600A45442 /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4FF50523E1437600A45442 /* VocabularyWord.swift */; };
-		AF69695E23E27A8E00B7088E /* NewButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF69695D23E27A8E00B7088E /* NewButtonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		AF059A5323E0DB6C006AA17A /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 		AF059A5523E0DB8D006AA17A /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 		AF4FF50523E1437600A45442 /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
-		AF69695D23E27A8E00B7088E /* NewButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewButtonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +62,6 @@
 				AF059A5323E0DB6C006AA17A /* WordsTableViewController.swift */,
 				AF059A5523E0DB8D006AA17A /* DefinitionViewController.swift */,
 				AF4FF50523E1437600A45442 /* VocabularyWord.swift */,
-				AF69695D23E27A8E00B7088E /* NewButtonViewController.swift */,
 				AF059A4523E0D9EB006AA17A /* Main.storyboard */,
 				AF059A4823E0DA14006AA17A /* Assets.xcassets */,
 				AF059A4A23E0DA14006AA17A /* LaunchScreen.storyboard */,
@@ -148,7 +145,6 @@
 				AF059A4223E0D9EB006AA17A /* AppDelegate.swift in Sources */,
 				AF059A5423E0DB6C006AA17A /* WordsTableViewController.swift in Sources */,
 				AF4FF50623E1437600A45442 /* VocabularyWord.swift in Sources */,
-				AF69695E23E27A8E00B7088E /* NewButtonViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

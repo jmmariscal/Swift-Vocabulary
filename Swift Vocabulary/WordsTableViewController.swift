@@ -17,6 +17,36 @@ class WordsTableViewController: UITableViewController {
     
     ]
 
+    @IBAction func newWordBtn(_ sender: UIButton) {
+        let alertController = UIAlertController(title: "Add Word", message: nil, preferredStyle: .alert)
+        alertController.addTextField { (addWordTextField) in
+            addWordTextField.placeholder = "Add Word"
+        }
+        alertController.addTextField { (addDefinitionTextField) in
+            addDefinitionTextField.placeholder = "Add Definition"
+        }
+        
+        let saveAction = UIAlertAction(title: "Save", style: .default) { (alertAction) in
+            
+            guard let word = alertController.textFields![0].text,
+                let definition = alertController.textFields![1].text,
+                !word.isEmpty,
+                !definition.isEmpty else { return }
+            
+            let vocabWord = VocabularyWord(word: word, definition: definition)
+            self.vocabWords.append(vocabWord)
+            self.tableView.reloadData()
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        [saveAction, cancelAction].forEach { alertController.addAction($0) }
+        present(alertController, animated: true)
+        
+        self.tableView.reloadData()
+    }
+    
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return vocabWords.count
     }
